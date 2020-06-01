@@ -59,7 +59,7 @@
     width: 25vw;
     height: 25vh;
     border-radius: 50%;
-    background-color: rgba(52, 87, 178, 0.1);
+    background-color: rgb(52, 87, 178, 0.1);
     top: 15vh;
     left: 30vw;
     z-index: -1; 
