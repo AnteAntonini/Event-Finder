@@ -7,7 +7,7 @@
 
 .discover-main-section .covers-image {
     width: 30vw;
-    margin-left: 2rem;
+    margin-left: 15rem;
     height: auto; /*so our image scales,so it don't super streach */
     max-width: 350px;
 }
@@ -41,6 +41,7 @@
 
     .discover-main-section .covers-image {
         margin-top: 2rem;
+        margin-left: 5rem;
         height: 30vh;
         width: auto;
     }
