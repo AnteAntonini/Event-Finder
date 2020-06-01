@@ -1,0 +1,86 @@
+/* specifit styles*/
+
+.home-main-section {
+    display: flex;
+    align-items: stretch;   /* da budu full height containera*/
+    justify-content: space-between;
+    flex-grow: 1;           /* to fill the entire space for a remaining height page*/
+}
+
+.home-main-section .img-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;  /*omogucit ce nam guranje stvari do kraja stranice,sto moramo uradit sa slikom*/
+    align-items: stretch;
+    justify-content: flex-end; /*gurnit ce sliku blizu teksta sa desne strane,buduci da ce ga gurnuti udesno sto je vise moguce*/
+}
+
+.home-main-section .lady-image {
+    background-image: url(images/landing-page-girl.png);
+    flex-grow: 1;
+    max-height: 70vh;  /*ne zelimo da slika bude veca od 70% screena*/
+    min-width: 30vw;
+    background-size: contain; /*it will fit entire image inside without cropping or scaling*/
+    background-repeat: no-repeat;
+    background-position: bottom left; /*stavit ce sliku u donji lijevi kut*/
+}
+
+.home-main-section .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem; /*da bude mjesta izmedu teksta i slike*/
+    align-self: center; /*centrirat ce tekst u containeru*/
+}
+
+@media (max-width: 900px) {
+    .home-main-section .img-wrapper {
+        display: none;
+    }
+
+    .home-main-section {
+        justify-content: center;
+    }
+}
+
+.home-page-circle-1 {
+    position: absolute;
+    width: 25vw;
+    height: 25vh;
+    border-radius: 50%;
+    background-color: rgba(188, 58, 128, 0.1);
+    bottom: 5vh;
+    left: 5vw;
+    z-index: -1; /* DA BUDE IZA SVEGA PO DEFAULTU,tako ce ovaj krug bit iza slike*/
+}
+
+.home-page-circle-2 {
+    position: absolute;
+    width: 25vw;
+    height: 25vh;
+    border-radius: 50%;
+    background-color: rgba(52, 87, 178, 0.1);
+    top: 15vh;
+    left: 30vw;
+    z-index: -1; 
+}
+
+.home-page-circle-3 {    /*ovo nije circle nego container za circle ispod*/
+    position: absolute;
+    overflow: hidden;
+    width: 45vw;
+    height: 45vh;
+    bottom: 0;
+    right: 0;
+    z-index: -1; 
+}
+
+.home-page-circle-3::before {   /* razlog zasto smo stavili ovaj circle unutar circle 3,da mozemo koristit overflow:hidden; TAKO DA NE BUDE SCROLL-anja NA STRANICI */
+    content: '';
+    transform: translate(40%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(52, 87, 178, 0.1);
+}
