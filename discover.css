@@ -46,7 +46,8 @@
     
     .discover-main-section .covers-image {
       margin-top: 2rem;
-      height: auto;
+      margin-bottom: 2rem;
+      height: 20vh;
       width: 30vw;
     }
   }
