@@ -74,8 +74,8 @@ body {
 }
 
 .container {
-    max-width: 1200px;  /* mozda postotak koristit 80%? */
-    margin: 0 auto;
+    max-width: 100%;  /* mozda postotak koristit 80%? */
+    margin: 0;
     padding: 0 40px;
     flex-grow: 1;
 }

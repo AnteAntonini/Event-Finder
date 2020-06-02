@@ -6,15 +6,16 @@
   }
   
   .discover-main-section .covers-image {
-    width: 30vw;
+    width: 20vw;
     margin-left: 2rem;
-    height: auto;
+    height: 20vh;
     max-width: 350px;
   }
   
   .image-grid {
       display: grid;
       grid-template: 1fr 1fr / 1fr 1fr;
+      grid-row-gap: 2vh;
   }
   .icon-section {
     display: flex;
